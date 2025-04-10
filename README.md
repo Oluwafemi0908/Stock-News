@@ -1,2 +1,13 @@
-# Stock-News
-Stay in the loop with the stock market! 📈💬 This Python app fetches stock news and sends you a text with the latest percentage change, using Twilio. It’s like having your personal stock advisor right in your pocket. Get the updates fast and straight to your phone! 📲💸
+# 📈 Stock News with Percentage Change – SMS Alerts
+
+A Python program that fetches the latest stock news and sends you an SMS with the stock’s percentage change, powered by Twilio!
+
+## 🚀 Features
+- Fetches stock price data and percentage change
+- Sends SMS alert with the change via Twilio
+- Stay updated on your favorite stocks
+
+## 📦 Requirements
+- Python 3+
+- `requests` for fetching stock data
+- Twilio account for sending SMS
