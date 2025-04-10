@@ -38,7 +38,7 @@ change = percentage_change(yesterday_close, day_before_close)
 
 # STEP 2: Use https://newsapi.org
 # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME. 
-stock_news_api = 'bcbabdd0302041fc8a2426eb025a74f4'
+stock_news_api = 'API'
 news_url = 'https://newsapi.org/v2/everything?'
 
 news_params = {
@@ -85,13 +85,13 @@ for news in news_data['articles'][0:3]:
 
     # STEP 3: Use https://www.twilio.com
     # Send a separate message with the percentage change and each article's title and description to your phone number.
-    account_sid = 'AC1498b39891ab497125a713db481d9e72'
-    auth_token = '61592578095c2a266e5873de4608a1eb'
+    account_sid = 'ATWILLIO SID'
+    auth_token = 'SECRET TOKEN'
     client = Client(account_sid, auth_token)
     message = client.messages.create(
-        from_='+12513354300',
+        from_='TWILLIO NUMBER',
         body=body,
-        to='+2349055789508'
+        to='RECEIVER'
     )
 
     print(message.sid)
